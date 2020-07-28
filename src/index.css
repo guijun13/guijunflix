@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #2A7AE4;
+  --primary: #77CA04;
   --black: #000000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
@@ -18,6 +18,22 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  --bodyPaddingTop: 94px;
+  padding-top: var(--bodyPaddingTop);
+}
+
+@media (max-width: 800px) {
+  .Menu {
+    height: 40px;
+    justify-content: center;
+  }
+  body {
+    --bodyPaddingTop: 40px;
+    padding-top: var(--bodyPaddingTop);
+  }
 }
 
 a {
